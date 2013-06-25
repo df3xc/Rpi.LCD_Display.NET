@@ -4,7 +4,7 @@ Rpi.LCD_Display.NET
 Control RaspBerry LCD Display Plate using C#/.NET
 
 This library 
-- controls a LCD Display via i2c bus. 
+
 - controls a I2C bus MPC23017 port expander.
 - controls a LCD Display attached to the MPC23017 port expander
 - read keypad attached to the MPC23017 port expander
