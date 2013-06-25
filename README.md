@@ -13,7 +13,7 @@ This library
 The library is used and tested with Adafruit 16x2 Character LCD + Keypad for Raspberry Pi
 
 It provides:
-- Set the LCD background color (if display supports RGG)
+- Set the LCD background color (if display supports RGB)
 - Write text to the display
 - Red keys from keypad
 
