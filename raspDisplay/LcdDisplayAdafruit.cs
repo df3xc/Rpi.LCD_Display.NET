@@ -12,7 +12,9 @@ namespace LcdDisplay
     public class Display
 
     {
-        static I2CBus i2cbus = new I2CBus("/dev/i2c-1");
+       // static I2CBus i2cbus = new I2CBus("/dev/i2c-1");
+
+        static I2CBus i2cbus = I2CBus.Open("/dev/i2c-1");
 
 
         /// <summary>

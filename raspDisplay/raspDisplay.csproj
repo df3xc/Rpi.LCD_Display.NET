@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LcdDisplay</RootNamespace>
     <AssemblyName>raspDisplay</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -51,7 +51,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\i2c\RPi.I2C.Net\RPi.I2C.Net.csproj">
+    <ProjectReference Include="..\..\RPi.I2C.Net\RPi.I2C.Net\RPi.I2C.Net.csproj">
       <Project>{2AE6A02F-4B57-43A1-8C19-2917008215D5}</Project>
       <Name>RPi.I2C.Net</Name>
     </ProjectReference>
