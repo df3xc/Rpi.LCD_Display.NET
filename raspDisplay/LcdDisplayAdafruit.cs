@@ -280,8 +280,8 @@ namespace LcdDisplay
         public const byte LCD_RETURNHOME          = 0x02;
         public const byte LCD_ENTRYMODESET        = 0x04;
         public const byte LCD_DISPLAYCONTROL      = 0x08;
-        public const byte   LCD_CURSORSHIFT         = 0x10;
-        public const byte  LCD_FUNCTIONSET         = 0x20;
+        public const byte LCD_CURSORSHIFT         = 0x10;
+        public const byte LCD_FUNCTIONSET         = 0x20;
         public const byte LCD_SETCGRAMADDR = 0x40;
 
         public const byte DISPLAYON = 0x04;
