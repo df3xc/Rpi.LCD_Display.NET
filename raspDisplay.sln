@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raspDisplay", "raspDisplay\raspDisplay.csproj", "{01ED1D2F-8568-419E-B01F-F05009D55E53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPi.I2C.Net", "..\i2c\RPi.I2C.Net\RPi.I2C.Net.csproj", "{2AE6A02F-4B57-43A1-8C19-2917008215D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPi.I2C.Net", "..\RPi.I2C.Net\RPi.I2C.Net\RPi.I2C.Net.csproj", "{2AE6A02F-4B57-43A1-8C19-2917008215D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
