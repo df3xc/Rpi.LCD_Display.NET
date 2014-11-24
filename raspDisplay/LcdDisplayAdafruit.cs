@@ -85,8 +85,9 @@ namespace LcdDisplay
 
         static void mpc_write(byte reg, byte val, int sleep)
         {
-            i2cbus.WriteCommand(mpc_bank0.address, reg, val);
             //Console.WriteLine("IC2WR " + reg.ToString("X2") + ":" +  val.ToString("X2"));
+            i2cbus.WriteCommand(mpc_bank0.address, reg, val);
+
             Thread.Sleep(sleep);
         }
 
@@ -198,6 +199,21 @@ namespace LcdDisplay
                 data[0] = (byte)~data[0];
                 data[0] = (byte)(0x1F & data[0]);
             } while (data[0] != 0);
+
+            return (key);
+
+        }
+
+        public static byte keypress()
+        {
+            byte key;
+            byte[] data;
+            data = i2cbus.ReadDeviceRegister(mpc_bank0.address, mpc_bank0.gpioa);
+            data[0] = (byte)~data[0];
+            data[0] = (byte)(0x1F & data[0]);
+            key = data[0];
+
+            if (key != 0) key = (byte)(key + 0x80);
 
             return (key);
 
